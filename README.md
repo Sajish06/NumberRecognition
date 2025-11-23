@@ -40,25 +40,45 @@ This dataset contains thousands of labeled images of ASL signs for digits **0–
 
 ## 📁 File Layout
 Numbers/
+
 │
+
 ├── datasets/
+
 │   └── SignLanguageDigitsDataset/
+
 │       ├── 0/
+
 │       │   └── Input Images - Sign 0/
+
 │       ├── 1/
+
 │       ├── ...
+
 │       └── 9/
+
 │
+
 ├── project/
+
 │   ├── data/
+
 │   │   ├── X.npy        # Extracted landmark features
+
 │   │   └── y.npy        # Corresponding labels
+
 │   └── models/
+
 │       └── model.h5     # Saved trained model
+
 │
+
 ├── preprocess_digits.py  # Extracts MediaPipe hand landmarks and saves X, y arrays
+
 ├── train.py              # Trains and saves CNN model
+
 ├── realtime.py           # Live prediction using webcam
+
 └── README.md             # Project documentation
 
 ---
