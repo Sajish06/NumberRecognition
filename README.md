@@ -93,8 +93,8 @@ Press ctrl+c to exit.
 ---
 
 ## 💡 Additional Notes
-Ensure your lighting is good for accurate hand tracking.
-Only one hand should be visible in the frame.
-If you get a shape mismatch error, ensure you’re using the updated realtime.py that extracts 42 features (one hand).
-You can optionally enable text-to-speech via pyttsx3 in the realtime script.
-Works best at 720p resolution and normal lighting conditions.
+-Ensure your lighting is good for accurate hand tracking.
+-Only one hand should be visible in the frame.
+-If you get a shape mismatch error, ensure you’re using the updated realtime.py that extracts 42 features (one hand).
+-You can optionally enable text-to-speech via pyttsx3 in the realtime script.
+-Works best at 720p resolution and normal lighting conditions.
