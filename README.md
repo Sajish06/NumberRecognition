@@ -1,35 +1,44 @@
-✋ Real-Time Sign Language Digit Recognition
-📘 Project Overview
+# ✋ Real-Time Sign Language Digit Recognition
 
-This project uses computer vision and deep learning to recognize American Sign Language (ASL) digits (0–9) in real-time using a webcam.
-It leverages MediaPipe for hand landmark detection and a TensorFlow neural network for digit classification.
+## 📘 Project Overview
+This project uses computer vision and deep learning to recognize **American Sign Language (ASL) digits (0–9)** in real-time using a webcam.  
+It leverages **MediaPipe** for hand landmark detection and a **TensorFlow neural network** for digit classification.
 
 When you show a hand sign (0–9) to your webcam, the system detects your hand, extracts landmarks, classifies the sign, and displays the predicted digit live on screen.
 
-🧰 Tools and Dataset
+---
 
-Tools Used
-Python 3.12+
-VS Code (for coding and running scripts)
-OpenCV (for video capture and image handling)
-MediaPipe (for real-time hand tracking)
-TensorFlow/Keras (for model training and prediction)
+## 🧰 Tools and Dataset
 
-Dataset
-https://www.kaggle.com/datasets/rayeed045/american-sign-language-digit-dataset
-American Sign Language Digit Dataset
-This dataset contains thousands of labeled images for hand signs representing digits 0–9.
-Each digit folder contains real images of the corresponding sign.
+### **Tools Used**
+- **Python 3.12+**
+- **VS Code** (for coding and running scripts)
+- **OpenCV** (video capture + image handling)
+- **MediaPipe** (real-time hand tracking)
+- **TensorFlow/Keras** (model training and prediction)
 
-Python Libraries and Their Roles
-Library	Purpose
-opencv-python	Captures webcam feed and processes frames
-mediapipe	Detects and tracks hand landmarks
-tensorflow / keras	Builds, trains, and runs the digit classification model
-numpy	Handles numerical and matrix operations
-scikit-learn	Used for dataset splitting and evaluation
+### **Dataset**
+**American Sign Language Digit Dataset**  
+🔗 https://www.kaggle.com/datasets/rayeed045/american-sign-language-digit-dataset
 
-📁 File Layout
+This dataset contains thousands of labeled images of ASL signs for digits **0–9**.
+
+---
+
+## 🧩 Python Libraries and Their Functions
+
+| Library | Purpose |
+|--------|---------|
+| **opencv-python** | Captures webcam feed and processes frames |
+| **mediapipe** | Detects and tracks 21 hand landmarks |
+| **tensorflow / keras** | Builds, trains, and runs the neural network model |
+| **numpy** | Handles numerical and matrix operations |
+| **scikit-learn** | Performs dataset splitting and evaluation |
+| **pyttsx3** | Provides optional text-to-speech output |
+
+---
+
+## 📁 File Layout
 Numbers/
 │
 ├── datasets/
@@ -52,7 +61,9 @@ Numbers/
 ├── realtime.py           # Live prediction using webcam
 └── README.md             # Project documentation
 
-🚀 How to Run the Project (Step-by-Step)
+---
+
+## 🚀 How to Run the Project (Step-by-Step)
 
 1️⃣ Install Dependencies
 Open PowerShell or VS Code Terminal inside your project folder and run:
@@ -77,9 +88,11 @@ python realtime.py
 Hold your hand up to your webcam showing digits 0–9 in ASL form.
 The script displays the predicted digit live on the video feed.
 
-Press ctrl+cto exit.
+Press ctrl+c to exit.
 
-💡 Additional Notes
+---
+
+## 💡 Additional Notes
 Ensure your lighting is good for accurate hand tracking.
 Only one hand should be visible in the frame.
 If you get a shape mismatch error, ensure you’re using the updated realtime.py that extracts 42 features (one hand).
